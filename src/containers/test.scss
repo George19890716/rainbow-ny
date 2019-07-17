@@ -1,0 +1,23 @@
+@import '../styles/index.scss';
+
+.test {
+  &_container {
+    width: rem(450);
+    height: 500px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+  }
+
+  &_icon-box {
+    position: absolute;
+    top: rem(10);
+    left: rem(10);
+
+    .icon {
+      width: rem(30);
+      height: rem(30);
+    }
+  }
+}

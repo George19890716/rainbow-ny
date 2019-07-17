@@ -1,0 +1,27 @@
+@import '../../styles/index.scss';
+
+.link-item {
+  &_button {
+    width: rem(120);
+    height: rem(30);
+    font-size: rem(13);
+    font-weight: bolder;
+    color: $white;
+    text-align: center;
+    background-color: $theme;
+    outline: none;
+    border: $blue-border;
+    border-radius: rem(3);
+    box-shadow: 0 0 rem(3) $theme;
+  }
+    
+  &_button:hover {
+    color: $theme;
+    background-color: $white;
+  }
+
+  &_reverse {
+    color: $theme;
+    background-color: $white;
+  }
+}

@@ -1,0 +1,56 @@
+@import '../../styles/index.scss';
+
+.pagination {
+  &_button {
+    width: rem(25);
+    height: rem(30);
+    margin: rem(2);
+    outline: none;
+    text-align: center;
+    color: $black;
+    background-color: $white;
+    border: $blue-border;
+    border-radius: rem(3);
+    box-shadow: 0 0 rem(3) $theme;
+  
+    label {
+      font-family: $serif;
+      font-size: rem(18);
+    }
+  }
+
+  &_button:hover {
+    color: $white;
+    background-color: $theme;
+  }
+  
+  &_selected {
+    color: $white;
+    background-color: $theme;
+  }
+
+  &_arrow {
+    width: rem(30);
+    height: rem(30);
+    margin: rem(2);
+    border: none;
+    outline: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+
+    .img {
+      width: auto;
+      height: rem(24);
+    }
+
+    .img-reverse {
+      transform: rotate(180deg);
+    }
+  }
+
+  &_arrow-normal {
+    width: rem(24);
+  }
+}

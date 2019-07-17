@@ -1,0 +1,108 @@
+@import '../../styles/index.scss';
+
+.input {
+  &_container {
+    width: 100%;
+    min-height: rem(30);
+    position: relative;
+  }
+
+  &_title {
+    height: rem(30);
+    line-height: rem(30);
+    padding-left: rem(6);
+    font-size: rem(16);
+    font-family: $serif;
+    color: $black;
+    display: block;
+  }
+
+  &_normal {
+    width: 100%;
+    height: rem(30);
+    line-height: rem(30);
+    padding-left: rem(6);
+    font-size: rem(15);
+    font-family: $serif;
+    outline: none;
+    border: $standard-border;
+    border-radius: rem(3);
+    box-shadow: 0 0 rem(5) $shadow-color;
+    -moz-box-shadow: 0 0 rem(5) $shadow-color;
+    -webkit-box-shadow: 0 0 rem(5) $shadow-color; 
+  }
+
+  &_icon-box {
+    width: rem(32);
+    height: rem(32.5);
+    position: absolute;
+    top: rem(1);
+    left: rem(1);
+    background-color: $shadow-color;
+    border-top-left-radius: rem(3);
+    border-bottom-left-radius: rem(3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_icon {
+    width: rem(24);
+    height: rem(24);
+  }
+
+  &_with-title {
+    top: rem(31);
+  }
+
+  &_with-icon {
+    text-indent: rem(39);
+  }
+
+  &_error {
+    border: $error-border;
+    box-shadow: 0 0 rem(5) $error;
+    -moz-box-shadow: 0 0 rem(5) $error;
+    -webkit-box-shadow: 0 0 rem(5) $error;
+  }
+
+  &_error-msg {
+    color: $error;
+    font-size: rem(12);
+    font-family: $sans-serif;
+    padding-left: rem(15);
+  }
+}
+
+.checkbox {
+  &_container {
+    width: 100%;
+    height: rem(30);
+    display: flex;
+    align-items: center;
+  }
+
+  &_checkbox {
+    margin-left: rem(10);
+    margin-right: rem(5);
+  }
+
+  &_text {
+    height: rem(30);
+    line-height: rem(30);
+    font-size: rem(12);
+    font-family: $serif;
+    color: $black;
+  }
+}
+
+.select {
+  &_option {
+    width: 100%;
+    height: rem(20);
+    line-height: rem(20);
+    padding-left: rem(6);
+    font-size: rem(13);
+    font-family: $serif;
+  }
+}

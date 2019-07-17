@@ -1,0 +1,38 @@
+@import '../../styles/index.scss';
+
+.button {
+  &_normal {
+    width: 100%;
+    height: rem(30);
+    font-size: rem(13);
+    font-weight: bolder;
+    color: $white;
+    text-align: center;
+    background-color: $theme;
+    border: $blue-border;
+    box-shadow: 0 0 rem(3) $theme;
+
+    &:hover {
+      color: $theme;
+      background-color: $white;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &_reverse {
+    color: $theme !important;
+    background-color: $white !important;
+
+    &:hover {
+      color: $white !important;
+      background-color: $theme !important;
+    }
+  }
+
+  &_raduis {
+    border-radius: rem(3);
+  }
+}

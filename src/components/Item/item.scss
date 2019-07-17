@@ -1,0 +1,145 @@
+@import '../../styles/index.scss';
+
+.listing-item {
+  &_container {
+    width: 100%;
+    height: rem(140);
+    display: flex;
+    text-decoration:none；
+  }
+
+  &_img {
+    width: rem(200);
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    .img-box {
+      width: rem(180);
+      height: rem(120);
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+    }
+
+    .img {
+      width: auto;
+      height: 100%;
+    }
+  }
+
+  &_content {
+    width: rem(585);
+    margin-top: rem(10);
+    position: relative;
+
+    .detail {
+      width: 100%;
+      height: rem(25);
+      line-height: rem(25);
+      display: flex;
+      align-items: center;
+      padding-left: rem(15);
+      font-family: $serif;
+    }
+
+    .address {
+      font-size: rem(20);
+      font-weight: $bord-bord;
+      color: $theme;
+    }
+
+    .area {
+      font-size: rem(16);
+      font-weight: $bord-normal;
+      color: $black;
+    }
+
+    .normal {
+      font-size: rem(14);
+      font-weight: $bord-normal;
+      color: $black;
+    }
+
+    .button-div {
+      width: rem(250);
+      height: rem(25);
+      margin-top: rem(15);
+      display: flex;
+      justify-content: flex-start;
+    }
+
+    .button {
+      margin-left: rem(15);
+      width: rem(120);
+    }
+
+    .divide-line {
+      font-size: rem(20);
+      font-weight: $bord-border;
+    }
+
+    .price {
+      position: absolute;
+      top: 0;
+      right: rem(15);
+      height: rem(25);
+      line-height: rem(25);
+      font-size: rem(20);
+      font-family: $serif;
+      font-weight: $bord-bord;
+      color: $black;
+      display: flex;
+      align-items: center;
+    }
+  }
+}
+
+.table-item {
+  &_container {
+    width: 100%;
+    height: auto;
+    border: $dash-table-border;
+    border-bottom: none;
+  }
+
+  &_tr {
+    width: 100%;
+    min-height: rem(30);
+    line-height: rem(30);
+    font-family: $sans-serif;
+    font-size: rem(15);
+    color: $black;
+    display: flex;
+    border-bottom: $dash-table-border;
+  }
+
+  &_td-left {
+    flex: 1.2;
+    font-weight: $bord-bord;
+    text-align: right;
+    padding-right: rem(8);
+    border-right: $dash-table-border;
+  }
+
+  &_td-right {
+    flex: 2;
+    font-weight: $bord-normal;
+    text-align: left;
+    padding-left: rem(8);
+
+    label {
+      display: block;
+      line-height: rem(18);
+    }
+
+    label:first-child {
+      padding-top: rem(6);
+    }
+
+    label:last-child {
+      padding-bottom: rem(6);
+    }
+  }
+}

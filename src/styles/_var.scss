@@ -1,0 +1,14 @@
+@import 'function';
+
+$container-width: 1024px;
+$standard-border: rem(1) solid #EEE;
+$blue-border: rem(1) solid $theme;
+$error-border: rem(1) solid $error;
+$dash-table-border: rem(1) dashed $gray;
+$bord-light: 300;
+$bord-normal: 400;
+$bord-bord: 700;
+$bord-border: 900;
+$z-header: 10;
+$z-select: 50;
+$z-modal: 900;

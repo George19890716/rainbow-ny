@@ -1,0 +1,15 @@
+@import '../../styles/index.scss';
+
+.line {
+  &_dash {
+    width: auto;
+    height: 0;
+    border-top: 1px dashed $gray;
+  }
+
+  &_bord {
+    width: auto;
+    height: 0;
+    border-top: 1.5px solid $black;
+  }
+}

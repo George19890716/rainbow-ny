@@ -1,0 +1,16 @@
+@import '../../styles/index.scss';
+
+.modal {
+  &_container {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba($color: $black, $alpha: 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: $z-modal;
+  }
+}

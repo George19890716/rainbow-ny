@@ -1,0 +1,150 @@
+@import '../../styles/index.scss';
+
+.language-select {
+  &_container {
+    width: 100%;
+    position: relative;
+  }
+ 
+  &_selector {
+    height: rem(30);
+    box-sizing: border-box;
+    border: $standard-border;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+  }
+
+  &_flag {
+    height: rem(20);
+    margin: 0 rem(5);
+  }
+
+  &_language {
+    font-size: rem(14);
+    font-family: $serif;
+  }
+
+  &_icon {
+    width: rem(20);
+    height: rem(20);
+    position: absolute;
+    right: rem(5);
+  }
+
+  &_options {
+    position: absolute;
+    top: rem(30);
+    width: 100%;
+    border: {
+      left: $standard-border;
+      right: $standard-border;
+      bottom: $standard-border;
+    }
+    box-sizing: border-box;
+    background-color: $white;
+    z-index: $z-select;
+  }
+}
+
+.language-option {
+  &_container {
+    width: 100%;
+    position: relative;
+    height: rem(25);
+    box-sizing: border-box;
+    background-color: $white;
+    display: flex;
+    align-items: center;
+  }
+
+  &_container:hover {
+    background-color: $shadow-color;
+  }
+
+  &_flag {
+    height: rem(18);
+    margin: 0 rem(5) 0 rem(15);
+  }
+
+  &_text {
+    font-size: rem(12);
+    font-family: $serif;
+  }
+
+  &_icon {
+    width: rem(15);
+    position: absolute;
+    right: rem(15);
+  }
+}
+
+.icon-select {
+  &_container {
+    width: rem(30);
+    position: relative;
+  }
+
+  &_icon {
+    width: rem(30);
+    height: rem(30);
+  }
+
+  &_options {
+    position: absolute;
+    top: rem(35);
+    left: rem(-35);
+    width: rem(100);
+    border: $standard-border;
+    box-sizing: border-box;
+    background-color: $white;
+    z-index: $z-select;
+  }
+
+  &_options:before {
+    position: absolute;
+    content: '';
+    top: rem(-5);
+    left: rem(45);
+    border-left: rem(5) solid transparent;
+    border-right: rem(5) solid transparent;
+    border-bottom: rem(5) solid $shadow-color;
+  }
+
+  &_options:after {
+    position: absolute;
+    content: '';
+    top: rem(-3);
+    left: rem(45);
+    border-left: rem(5) solid transparent;
+    border-right: rem(5) solid transparent;
+    border-bottom: rem(5) solid $white;
+  }
+}
+
+.option {
+  &_container {
+    width: 100%;
+    position: relative;
+    height: rem(25);
+    box-sizing: border-box;
+    background-color: $white;
+    z-index: $z-header;
+  }
+
+  &_container:hover {
+    background-color: $shadow-color;
+  }
+
+  &_text {
+    font-size: rem(12);
+    font-family: $serif;
+    padding-left: rem(15);
+  }
+}
+
+.select {
+  &_hidden {
+    display: none;
+  }
+}
